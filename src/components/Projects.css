@@ -1,0 +1,94 @@
+.projects {
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey olarak düzenler */
+  width: 100%; /* Tam genişlik */
+  padding: 20px; /* Üst ve alt boşluk */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+}
+
+.projects h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #4338CA;
+  margin: 20px 0 0px 250px; /* Üst, alt, sağdan boşluk ekledik */
+  text-align: left; /* Başlık sol üstte hizalanır */
+}
+
+.project-items {
+  display: flex;
+  flex-wrap: wrap; /* Satıra sığmayan öğeler alt satıra geçer */
+  justify-content: center; /* İçerikleri ortalar */
+  gap: 20px; /* Projeler arasındaki boşluk */
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey olarak düzenler */
+  width: 300px;
+  background-color: #FFFFFF; /* Arka plan beyaz */
+  border-radius: 8px; /* Köşe yuvarlama */
+  padding: 20px; /* İç boşluk */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.project-image {
+  width: 100%; /* İçerik genişliğine göre ayarlanır */
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px; /* Köşe yuvarlama */
+}
+
+.project-item h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333; /* Başlık rengi */
+  margin: 10px 0;
+}
+
+.project-item p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555; /* Açıklama rengi */
+  margin-bottom: 20px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.github-btn, .view-site-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* Yazı boyutunu büyüttük */
+  color: #3730A3;
+  cursor: pointer;
+}
+
+.github-btn img {
+  width: 80px; /* İkon boyutu */
+  height: 35px; /* İkon boyutu */
+}
+
+.view-site-btn {
+  margin-left: auto; /* Sağ tarafta hizalar */
+}
+
+.github-btn {
+  margin-right: auto; /* Sol tarafta hizalar */
+}
+.section-divider {
+  border: none;
+  border-top: 1px solid gray; /* Çizgi rengi ve kalınlığı */
+  margin: 0 auto; /* Çizgi etrafındaki boşlukları kaldır */
+  margin-bottom: 30px; /* Çizgi ve içerik arasında boşluk */
+  width: 80%;
+}

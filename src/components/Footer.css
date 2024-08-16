@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  flex-direction: column; /* İçerikleri dikey olarak hizalar */
+  align-items: center; /* İçerikleri yatayda ortalar */
+  justify-content: center; /* İçerikleri dikeyde ortalar */
+  width: 100%; /* Genişliği sayfa genişliğine yay */
+  background: #F9F9F9;
+  padding: 20px 0; /* Üst ve alt boşluklar */
+  box-sizing: border-box; /* Padding dahil genişliği ayarlar */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row; /* İçerikleri yatay olarak hizalar */
+  justify-content: space-between; /* İçerikler arasında boşluk bırakır */
+  align-items: center; /* İçerikleri yatayda ortalar */
+  width: 80%; /* İçerik genişliği sayfa genişliğine göre ayarlanır */
+  max-width: 1140px; /* Maksimum genişlik */
+  margin: 20px auto; /* Üst ve alt margin ekler, ortalar */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* İkonlar ve metin arasında daha geniş boşluk */
+}
+
+.contact-icon {
+  width: 26px;
+  height: 26px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
+
+.contact-email {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+  color: #AF0C48;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none; /* Link altını kaldır */
+}
+
+.blog-link {
+  color: #0A0A14;
+}
+
+.github-link {
+  color: #00AB6B;
+}
+
+.linkedin-link {
+  color: #0077B5;
+}

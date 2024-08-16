@@ -1,0 +1,57 @@
+#about-me {
+  padding: 50px 50px;
+}
+
+.main-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin: 20px 0 0px 250px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profile-info,
+.about-me-content {
+  width: 48%;
+  
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4338CA;
+ 
+  margin: 20px 0 0px 250px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0px 250px;
+}
+
+ul li {
+  font-size: 16px;
+  color: #6B7280;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.6;
+}
+.section-divider {
+  border: none;
+  border-top: 1px solid gray; /* Çizgi rengi ve kalınlığı */
+  margin: 0 auto; /* Çizgi etrafındaki boşlukları kaldır */
+  margin-bottom: 30px; /* Çizgi ve içerik arasında boşluk */
+  width: 80%;
+}

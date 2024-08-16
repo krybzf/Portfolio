@@ -1,0 +1,59 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+}
+
+.hero .hero-text {
+  max-width: 500px;
+}
+
+.hero .hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero .hero-text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.hero .hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero .hero-buttons .button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #4338CA;
+  color: #4338CA;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .hero-buttons .button:hover {
+  background-color: #4338CA;
+  color: #fff;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 20px;
+
+}
+
+
+
+.hero .hero-buttons .github-btn1, 
+.hero .hero-buttons .linkedin-btn {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+

@@ -1,0 +1,55 @@
+/* Varsayılan Tema (Açık) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --background-color: #ffffff; /* Açık tema için arka plan rengi */
+  --text-color: #333333;       /* Açık tema için metin rengi */
+}
+
+body.dark {
+  --background-color: #1a202c; /* Koyu tema için arka plan rengi */
+  --text-color: #ffffff;       /* Koyu tema için metin rengi */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+header, main, section, footer {
+  padding: 20px;
+}
+
+/* Bölüm Stilleri */
+body.dark .App {
+  background-color: var(--background-color);
+}
+
+body.dark .header, 
+body.dark .footer {
+  background-color: var(--background-color);
+}
+
+body.dark .hero, 
+body.dark .skills, 
+body.dark .about-me, 
+body.dark .projects 
+body.dark footer{
+  background-color: var(--background-color);
+}
+
+body.dark nav a {
+  color: var(--text-color);
+}
+body.dark footer a {
+  color: #ffffff; /* Footer içindeki linkleri beyaz yap */
+}

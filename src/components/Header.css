@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header.dark-mode {
+  background-color: #333; /* Dark mode arka plan rengi */
+  color: #f5f5f5; /* Dark mode yazı rengi */
+}
+
+.right-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Butonlar arasındaki boşluk */
+  margin-bottom: 10px; /* Butonların altında yer açmak için */
+}
+
+.theme-switch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Switch ve etiketler arasındaki boşluk */
+}
+
+.mode-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000; /* Başlangıçta siyah yazı rengi */
+  transition: color 0.3s ease; /* Renk geçişi için geçiş efekti */
+  cursor: default; /* Tıklanamaz işaretçi */
+  pointer-events: none; /* Tıklanamazlık */
+}
+
+.mode-label.active {
+  display: block; /* Aktif olan etiket görünür */
+}
+
+.mode-label.inactive {
+  display: none; /* Aktif olmayan etiket gizli */
+}
+
+.mode-label.dark-mode {
+  color: #fff; /* Dark mode'da yazı rengi beyaz */
+}
+
+.mode-label.light-mode {
+  color: #000; /* Light mode'da yazı rengi siyah */
+}
+
+.theme-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #ddd; /* Açık tema switch arka plan rengi */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0 10px; /* Switch butonunu sağa kaydırmak için */
+}
+
+.switch {
+  position: absolute;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.switch.light {
+  transform: translateX(0); /* Sol tarafta kalma */
+}
+
+.switch.dark {
+  transform: translateX(30px); /* Sağ tarafa kaydırma */
+}
+
+.language-toggle {
+  border: none;
+  background: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: currentColor; /* Tema durumuna göre yazı rengi alır */
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons li {
+  list-style: none;
+}
+
+.nav-buttons a, .hire-me-btn {
+  text-decoration: none;
+  color: inherit; /* Tema durumuna göre renk alır */
+  font-family: 'Inter', sans-serif;
+}
+
+.hire-me-btn {
+  background-color: white; /* Arka plan rengi beyaz */
+  color: #3730A3; /* Yazı rengi #3730A3 */
+  padding: 10px 20px;
+  border: 2px solid #3730A3; /* Kenar rengi #3730A3 */
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
